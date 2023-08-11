@@ -1,0 +1,167 @@
+.Contact {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1007%26quot%3b)' fill='none'%3e%3cpath d='M-61.81 440.22C63.01 434.07 158.03 215.57 385.09 216.22 612.16 216.87 686.65 576.33 832 601.7' stroke='rgba(65%2c 34%2c 70%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-16.47 250.82C143.01 254.75 334.89 471.71 578.89 480.42 822.89 489.13 791.57 640.71 876.57 646.17' stroke='rgba(65%2c 34%2c 70%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-91.38 393.05C52.37 392.42 181.67 273.43 471.48 275.45 761.28 277.47 863.55 650.92 1034.33 669.9' stroke='rgba(65%2c 34%2c 70%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-101.83 31.47C77.62 35.03 208.97 261.52 574.52 272.27 940.08 283.02 1064.4 580.66 1250.88 588.33' stroke='rgba(65%2c 34%2c 70%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-286.69 402.5C-175.19 398.62-91.84 220.44 122.03 223.3 335.9 226.16 386.88 617.73 530.75 655.09' stroke='rgba(65%2c 34%2c 70%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1007'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: cover;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.contactModal {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.contactMe {
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: rgb(212, 189, 234);
+    color: black;
+
+}
+
+.contactBody label {
+    color: #fff;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.contactHeader {
+    font-size: 5rem;
+}
+
+.contactBody input,
+.contactBody textarea {
+    padding: 10px 100px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.contactBody {
+    width: 500px;
+    border-radius: 10px;
+    background-color: #9437ec;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: center;
+}
+
+.get-in-touch {
+    margin: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #e39ff6;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #9437ec;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.send {
+    color: #9437ec;
+    border-radius: 30px !important;
+    background-color: #fff !important;
+    padding: 10px 40px !important;
+}
+
+.send:hover {
+    background-color: #e39ff6 !important;
+    color: #000 !important;
+}
+.send:hover::after{
+border: none !important;
+}
+.get-in-touch:hover {
+    background-color: #e39ff6;
+    color: #000;
+}
+.get-in-touch:hover::after{
+    border: none !important;
+    }
+.contactModal {
+    background-color: grey;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width:769px) {
+    .Contact {
+        min-height: 0;
+        padding: 50px;
+    }
+
+    .contactHeader {
+        font-size: 17px;
+    }
+
+    .contactBody label {
+        font-size: 17px;
+    }
+
+    .send {
+        font-size: 12px !important;
+        padding: 10px 30px !important;
+    }
+
+    .contactBody {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #9437ec;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .contactBody input,
+    .contactBody textarea {
+        padding: 10px 50px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        
+    }
+
+    .Contact {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-in-touch {
+        font-size: 17px;
+    }
+
+
+}
+
+@media screen and (max-width:1351px) and (min-width:770px) {
+    .contactHeader {
+        font-size: 23px;
+    }
+
+    .Contact {
+        min-height: 0;
+        padding: 100px;
+    }
+}

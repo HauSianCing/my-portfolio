@@ -1,0 +1,134 @@
+.Home {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-list ul {
+    margin-top: 50px;
+}
+
+.social-list ul li {
+    padding: 25px;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+
+}
+.social-list ul li a img:hover{
+    color: #9437ec;
+}
+.social-list ul li a img{
+    width: 25px;
+    transition: 0.3s ease-in-out;
+}
+.Container {
+    margin-left: 200px;
+    padding: 50px;
+}
+
+span {
+    color: #9437ec;
+}
+
+
+#IT-Image {
+    width: 600px;
+    margin-right: 200px;
+}
+
+.header {
+    font-family: ui-rounded;
+    font-size: 40px;
+}
+
+@media screen and (max-width:868px) {
+
+    span,
+    .header,
+    .social-list ul li {
+        margin-top: 100px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    span {
+        font-size: smaller;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+
+    #IT-Image {
+        margin-right: 0;
+        position: relative;
+        width: 400px;
+        height: 350px;
+    }
+
+    .Home {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Container {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+        background-color: black;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width:1280px) and (min-width:867px) {
+    .Home {
+        margin: 0;
+        padding-top: 100px;
+    }
+    .social-list ul li {
+        padding: 0 7px;
+    }
+    .social-list ul li img {
+        width: 3px;
+    }
+    .header {
+        font-size: 19px;
+    }
+
+    span {
+        font-size: smaller;
+    }
+
+    #IT-Image {
+        width: 350px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:1351px) and (min-width:1279px) {
+    .social-list ul li {
+        padding: 15px;
+    }
+    .header {
+        font-size: 21px;
+    }
+
+    span {
+        font-size: smaller;
+    }
+
+    #IT-Image {
+        width: 450px;
+        margin-right: 150px;
+    }
+}

@@ -1,0 +1,114 @@
+.Projects {
+    margin-bottom: 50px;
+    padding: 100px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image {
+    width: 400px;
+}
+      
+.prj-description {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.projectCard:hover .prj-description {
+    cursor: pointer;
+    opacity: 1; 
+}
+
+.projectCard {
+    margin: 20px 10px;
+    border: none;
+    box-shadow: 2px 3px 5px #9437ec;
+    border-radius: 3px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Add other property transitions */
+}
+
+.projectCard:hover {
+    box-shadow: 4px 6px 8px #9437ec;
+}
+
+.projectMe {
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: rgb(212, 189, 234);
+    color: black;
+}
+
+.project {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:769px) {
+    .project-image {
+        width: 300px;
+    }
+
+    .Projects {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .projectCard {
+        margin: 3px;
+        box-shadow: 2px 3px 10px #9437ec;
+        border-radius: 5px;
+    }
+
+    .project {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projectHeader {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+}
+
+@media screen and (max-width:1351px) and (min-width:770px) {
+    .projectHeader {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .project-image {
+        width: 250px;
+    }
+
+    .Projects {
+        padding: 0;
+        margin: 0;
+    }
+
+    .projectCard {
+        margin: 20px 10px;
+        box-shadow: 2px 3px 10px #9437ec;
+        border-radius: 5px;
+    }
+    
+
+    .project {
+        padding: 0 100px 100px 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

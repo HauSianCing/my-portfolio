@@ -1,0 +1,160 @@
+#NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#NavBar li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#NavBar li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+#NavBar li a:hover,
+#NavBar li a.active {
+    cursor: pointer;
+    color: #9437ec;
+}
+
+#NavBar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    background-color: #9437ec;
+    bottom: -4px;
+    left: 20px;
+}
+
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 80px;
+    position: sticky;
+    box-shadow: 1px 1px 15px #9437ec;
+    top: 0;
+}
+
+.button a {
+    padding: 10px 20px;
+    border: 1px solid #e39ff6;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #9437ec;
+    transition: 0.3s ease-in-out;
+}
+
+.button a:hover {
+    background-color: #9437ec;
+    color: #fff;
+}
+
+.button a:hover::after {
+    border: none !important;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: #9437ec;
+}
+
+#Tag {
+    color: #9437ec;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:868px) {
+    #NavBar li {
+        margin-bottom: 25px;
+    }
+
+    .Nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 20px 30px;
+        box-shadow: 1px 1px 10px #9437ec;
+    }
+
+    #NavBar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 65px;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #9437ec;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #NavBar li a {
+        color: #fff;
+
+    }
+
+    .button a {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    .button a:hover {
+        cursor: pointer;
+        background-color: #e39ff6;
+        border: none;
+        color: #9437ec;
+    }
+
+    #NavBar li a:hover,
+    #NavBar li a.active {
+        cursor: pointer;
+        color: #e39ff6;
+    }
+
+    #NavBar li a:hover::after,
+    #NavBar li a.active::after {
+        cursor: pointer;
+        background-color: #e39ff6;
+    }
+
+    #Tag {
+        font-size: smaller;
+    }
+
+    #NavBar.active {
+        right: 0px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        cursor: pointer;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1280px) and (min-width:867px) {
+    #Tag {
+        font-size: 19px;
+    }
+}
