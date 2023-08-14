@@ -13,7 +13,7 @@ export const Home = () => {
                 <div className="social-list">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/facebook">
+                            <a href="https://www.facebook.com/margaret.5.94?mibextid=ZbWKwL">
                                 <img src="/386622_facebook_icon.png" />
                             </a>
                         </li>
@@ -23,7 +23,7 @@ export const Home = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/company/linkedin/">
+                            <a href="https://www.linkedin.com/in/margaret-cing-5874ab244">
                                 <img src="/linkedin.png" /></a>
                         </li>
                     </ul>

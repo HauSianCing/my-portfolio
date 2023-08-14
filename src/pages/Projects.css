@@ -58,7 +58,7 @@
     }
 
     .Projects {
-        padding: 30px;
+        padding: 0;
         margin: 0;
     }
 
@@ -69,7 +69,7 @@
     }
 
     .project {
-        padding: 0;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
