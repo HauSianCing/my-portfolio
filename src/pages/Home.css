@@ -66,8 +66,8 @@ span {
     #IT-Image {
         margin-right: 0;
         position: relative;
-        width: 400px;
-        height: 350px;
+        width: 100%;
+        height: 300px;
     }
 
     .Home {
