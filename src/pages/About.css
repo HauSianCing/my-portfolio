@@ -67,12 +67,9 @@
 }
 @media screen and (max-width:402px) {
     .paraMe {
-        width: 100%;
-        padding: 10px;
-    }
-    .aboutMe {
-        margin-bottom: 50px;
-        padding: 0;
+        width:100%;
+        padding: 20px;
+
     }
 }
 
