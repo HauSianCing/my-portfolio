@@ -1,23 +1,26 @@
 .Projects {
-    margin-bottom: 50px;
     padding: 100px;
     padding-bottom: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .project-image {
-    width: 400px;
+    width: 100%;
+    padding: 0;
 }
       
 .prj-description {
     background-color: black;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 20px;
     opacity: 0; 
     transition: opacity 0.5s ease-in-out; 
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .projectCard:hover .prj-description {
