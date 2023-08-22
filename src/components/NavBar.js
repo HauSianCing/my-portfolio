@@ -10,13 +10,22 @@ import { Link } from 'react-scroll';
 export default function NavBar() {
 
     const [condi, setCondi] = useState(false);
+    const [colorChange, setColorchange] = useState(" ");
     const handleClick = () => {
         setCondi(!condi);
     }
-
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 100) {
+            setColorchange("1px 1px 5px #9437ec");
+        }
+        else {
+            setColorchange("");
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
         <>
-            <nav className="Nav">
+            <nav className="Nav" style={{boxShadow:colorChange}}>
                 <Link smooth spy to="app" id="Tag"  >  Portfolio
                 </Link>
 

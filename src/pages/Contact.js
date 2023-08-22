@@ -70,8 +70,8 @@ export const Contact = () => {
                                 </label>
                                     <textarea ref={descriptionRef} type="text" name="message" id="message" required/>
                                 </div>
-                                <button className="send" type="submit" disabled={loading}>
-                                    Contact
+                                <button className="send" type="submit" >
+                                  Contact
                                 </button>
                             </form>
                         </section>

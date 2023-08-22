@@ -41,7 +41,6 @@
     background-color: #fff;
     padding: 20px 80px;
     position: sticky;
-    box-shadow: 1px 1px 15px #9437ec;
     top: 0;
 }
 
@@ -88,7 +87,6 @@
         top: 0;
         z-index: 100;
         padding: 20px 30px;
-        box-shadow: 1px 1px 10px #9437ec;
     }
 
     #NavBar {
