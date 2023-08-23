@@ -18,7 +18,7 @@
     transition: 0.3s ease-in-out;
 }
 
-#NavBar li a:hover,
+#NavBar li a:hover ,
 #NavBar li a.active {
     cursor: pointer;
     color: #9437ec;

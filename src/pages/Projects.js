@@ -27,7 +27,12 @@ const Project = (props) => {
                 <p>
                     {props.description}
                 </p>
-                
+                <div className="link">
+                    <a href={props.link}>
+                        <i className="fi fi-rr-arrow-right"></i>
+                    </a>
+                </div>
+
             </div>
         </div>
 

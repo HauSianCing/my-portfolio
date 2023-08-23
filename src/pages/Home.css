@@ -44,7 +44,18 @@ span {
     font-family: ui-rounded;
     font-size: 40px;
 }
-
+@media screen and (max-width:480px) {
+    #IT-Image {
+        max-width: 100%;
+        margin-right: 150px;
+    }
+    .Container {
+        text-align: center;
+        padding: 30px;
+    }
+    
+    
+}
 @media screen and (max-width:868px) {
 
     span,
@@ -53,6 +64,10 @@ span {
         margin-top: 100px;
         color: #fff;
         font-weight: bold;
+    }
+    .Container {
+        text-align: center;
+        padding: 50px;
     }
 
     span {
