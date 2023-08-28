@@ -1,5 +1,4 @@
 import "./Home.css";
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 export const Home = () => {
     return (
         <div className="Home">
@@ -36,8 +35,4 @@ export const Home = () => {
 
     );
 }
-const MyTooltip = (tt) => (
-    <Tooltip>
-        {tt}
-    </Tooltip>
-);
+

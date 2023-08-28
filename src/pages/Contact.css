@@ -9,9 +9,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    z-index: -1;
 }
-
 
 .contactMe {
     margin-bottom: 50px;

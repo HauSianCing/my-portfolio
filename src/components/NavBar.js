@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState} from "react";
 import { Home } from "../pages/Home";
 import { Contact } from "../pages/Contact";
 import { Projects } from "../pages/Projects";
@@ -26,7 +26,7 @@ export default function NavBar() {
     return (
         <>
             <nav className="Nav" style={{boxShadow:colorChange}}>
-                <Link smooth spy to="app" id="Tag"  >  Portfolio
+                <Link smooth spy to="app" id="Tag"  > Cing's Portfolio
                 </Link>
 
                 <ul id="NavBar" className={condi ? "#NavBar active" : "#NavBar"}>

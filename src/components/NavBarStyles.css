@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 #NavBar {
     display: flex;
     align-items: center;
@@ -75,6 +76,7 @@
     font-size: 24px;
     text-decoration: none;
     cursor: pointer;
+    font-family: 'Satisfy', cursive;
 }
 
 @media screen and (max-width:868px) {
