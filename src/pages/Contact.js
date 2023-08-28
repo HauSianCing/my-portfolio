@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Modal from '@material-ui/core/Modal';
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import { TextField } from "@material-ui/core";
 export const Contact = () => {
     const emailRef = useRef("email");
     const nameRef = useRef("name");
@@ -53,24 +54,13 @@ export const Contact = () => {
                     className="contactModal"
                 >
                     <div className="contactBody">
-
-                        <section>
+                        <section className="form-class">
                             <form className="for" onSubmit={handleSubmit}>
-                                <div className="form_group">
-                                    <label htmlFor="">Name :</label>
-                                    <input ref={nameRef} id="name" name="name" required/>
-                                </div>
-                                <div className="form_group">
-                                    <label htmlFor="">Email :</label>
-                                    <input ref={emailRef} type="email" id="email" name="email" required/>
-                                </div>
-                                <div className="form_group"><label>
-                                    Comment :
-                                </label>
-                                    <textarea ref={descriptionRef} type="text" name="message" id="message" required/>
-                                </div>
+                                <TextField ref={nameRef} id="name" name="name" required label="Name:" variant="standard" />
+                                <TextField id="standard-basic" ref={emailRef} type="email" name="email" required label="Email:" variant="standard" />
+                                <TextField ref={descriptionRef} type="text" name="message" id="message" required label="Comment:" variant="standard" />
                                 <button className="send" type="submit" >
-                                  Send
+                                    Send
                                 </button>
                             </form>
                         </section>

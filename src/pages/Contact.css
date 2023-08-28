@@ -16,46 +16,29 @@
     padding: 10px;
     background-color: rgb(212, 189, 234);
     color: black;
-
 }
 
-.contactBody label {
-    color: #fff;
-    font-size: 20px;
-    padding: 2px;
-
-}
 
 .contactHeader {
     font-size: 5rem;
 }
 
 .contactBody input {
-    padding: 20px;
-    width: 100%;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    align-items: baseline;
-    outline: none;
+    width: 400px;
+    margin-top: 30px;
 }
-
-.contactBody textarea {
-    padding: 20px;
-    width: 100%;
-    height: 100px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    align-items: baseline;
-    outline: none;
+.form-class{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
 }
-
 .contactBody {
     width: 500px;
     border-radius: 10px;
-    background:linear-gradient(15deg, #9437ec,#e39ff6);
+    background:linear-gradient(15deg, #e58afe,#fff);
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -77,10 +60,12 @@
 }
 
 .send {
-    color: #000;
+    margin-top: 10%;
+    margin-left: 60%;
+    color: #fff;
     border: none;
     border-radius: 30px !important;
-    background-color: #e39ff6 !important;
+    background-color: #9437ec !important;
     padding: 10px 40px !important;
     transition: 0.5s;
 }
@@ -113,8 +98,34 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+@media screen and (max-width:1351px) and (min-width:770px) {
+    .contactHeader {
+        font-size: 23px;
+    }
 
+    .Contact {
+        min-height: 0;
+        padding: 100px;
+    }
+}
 @media screen and (max-width:769px) {
+    .contactBody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        width: 100%;
+    }
+    .contactBody input{
+        width: 400px;
+    }
+    .contactHeader{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:384px) {
     .Contact {
         min-height: 0;
         padding: 50px;
@@ -124,35 +135,18 @@
         font-size: 17px;
     }
 
-    .contactBody label {
-        font-size: 17px;
-    }
-
     .send {
         font-size: 12px !important;
         padding: 10px 30px !important;
     }
 
     .contactBody {
+        padding: 40px 0;
         width: 100%;
-        border-radius: 10px;
-        padding: 50px;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
     }
-
-    .contactBody input,
-    .contactBody textarea {
-        padding: 10px 50px;
-        border: 1px solid #fff;
-        border-radius: 3px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-
+    .contactBody input{
+        padding: 0;
+        width: 100%;
     }
 
     .Contact {
@@ -169,13 +163,3 @@
 
 }
 
-@media screen and (max-width:1351px) and (min-width:770px) {
-    .contactHeader {
-        font-size: 23px;
-    }
-
-    .Contact {
-        min-height: 0;
-        padding: 100px;
-    }
-}
