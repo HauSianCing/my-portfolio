@@ -55,7 +55,6 @@ export const Contact = () => {
                     <div className="contactBody">
 
                         <section>
-                            <aside></aside>
                             <form className="for" onSubmit={handleSubmit}>
                                 <div className="form_group">
                                     <label htmlFor="">Name :</label>
@@ -71,7 +70,7 @@ export const Contact = () => {
                                     <textarea ref={descriptionRef} type="text" name="message" id="message" required/>
                                 </div>
                                 <button className="send" type="submit" >
-                                  Contact
+                                  Send
                                 </button>
                             </form>
                         </section>

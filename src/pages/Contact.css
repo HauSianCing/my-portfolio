@@ -23,6 +23,7 @@
     color: #fff;
     font-size: 20px;
     padding: 2px;
+
 }
 
 .contactHeader {
@@ -37,6 +38,7 @@
     border-radius: 3px;
     margin-bottom: 20px;
     align-items: baseline;
+    outline: none;
 }
 
 .contactBody textarea {
@@ -47,17 +49,19 @@
     border-radius: 3px;
     margin-bottom: 20px;
     align-items: baseline;
+    outline: none;
 }
 
 .contactBody {
     width: 500px;
     border-radius: 10px;
-    background-color: #9437ec;
+    background:linear-gradient(15deg, #9437ec,#e39ff6);
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    border: none;
+    outline: none;
 }
 
 .get-in-touch {
@@ -73,15 +77,18 @@
 }
 
 .send {
-    color: #9437ec;
+    color: #000;
+    border: none;
     border-radius: 30px !important;
-    background-color: #fff !important;
+    background-color: #e39ff6 !important;
     padding: 10px 40px !important;
+    transition: 0.5s;
 }
 
 .send:hover {
-    background-color: #e39ff6 !important;
-    color: #000 !important;
+    transition: 0.5s;
+    background-color: #5b4371 !important;
+    color: #fff !important;
 }
 
 .send:hover::after {
@@ -98,7 +105,6 @@
 }
 
 .contactModal {
-    background-color: grey;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -130,7 +136,6 @@
     .contactBody {
         width: 100%;
         border-radius: 10px;
-        background-color: #9437ec;
         padding: 50px;
         display: flex;
         flex-direction: row;
