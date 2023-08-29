@@ -98,7 +98,7 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
-@media screen and (max-width:1351px) and (min-width:770px) {
+@media screen and (max-width:1351px) and (min-width:500px) {
     .contactHeader {
         font-size: 23px;
     }
@@ -108,7 +108,7 @@
         padding: 100px;
     }
 }
-@media screen and (max-width:769px) {
+@media screen and (max-width:500px) {
     .contactBody {
         display: flex;
         flex-wrap: wrap;
@@ -118,7 +118,7 @@
         width: 100%;
     }
     .contactBody input{
-        width: 400px;
+        width: 330px;
     }
     .contactHeader{
         font-size: 23px;
@@ -146,7 +146,7 @@
     }
     .contactBody input{
         padding: 0;
-        width: 100%;
+        width: 250px;
     }
 
     .Contact {
