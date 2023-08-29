@@ -46,7 +46,7 @@ export const Contact = () => {
 
         <div className="Contact">
             <div className="message">
-                {messageSent ? <AlertBox visible={true} /> : null}
+                {messageSent ? <AlertBox visible={true} setMessageSent={setMessageSent} /> : null}
             </div>
             <h1 className="contactHeader">
                 Let's Work Together
@@ -80,7 +80,7 @@ export const Contact = () => {
 
 }
 
-const AlertBox = ({ visible }) => {
+const AlertBox = ({ visible, setMessageSent }) => {
     const [isVisible, setIsVisible] = useState(visible);
 
     useEffect(() => {
@@ -88,16 +88,20 @@ const AlertBox = ({ visible }) => {
             setIsVisible(true);
             const timeout = setTimeout(() => {
                 setIsVisible(false);
+                setMessageSent(false);
             }, 3000);
 
-            return () => clearTimeout(timeout);
+            return () => {
+                clearTimeout(timeout);
+            };
         }
-    }, [visible]);
+    }, [visible, setMessageSent]);
 
     return (
         <div className={`alert-box ${isVisible ? "" : "fade-out"}`}>
             <Alert severity="success">
-                Your Message has been Successfully Sent </Alert>
+                Your Message has been Successfully Sent
+            </Alert>
         </div>
     );
 };
