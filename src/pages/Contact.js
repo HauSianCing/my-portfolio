@@ -8,7 +8,7 @@ import AlertTitle from '@mui/material/AlertTitle';
 export const Contact = () => {
     const emailRef = useRef("email");
     const nameRef = useRef("name");
-    const descriptionRef = useRef("description");
+    const descriptionRef = useRef("message");
     const [loading, setLoading] = useState(false);
     const [messageSent, setMessageSent] = useState(false);
 
@@ -21,6 +21,7 @@ export const Contact = () => {
     const handleOpen = () => {
         setOpen(true);
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const serviceId = "service_qsqu3ab";
@@ -63,9 +64,9 @@ export const Contact = () => {
                     <div className="contactBody">
                         <section className="form-class">
                             <form className="for" onSubmit={handleSubmit}>
-                                <TextField ref={nameRef} id="name" name="name" required label="Name:" variant="standard" />
-                                <TextField ref={emailRef} type="email" id="email" name="email" required label="Email:" variant="standard" />
-                                <TextField ref={descriptionRef} type="text" name="message" id="message" required label="Message:" variant="standard" />
+                                <TextField inputRef={nameRef} id="name" name="name" required label="Name:" variant="standard" type="text" />
+                                <TextField inputRef={emailRef} id="email" name="email" required label="Email:" variant="standard" type="email" />
+                                <TextField inputRef={descriptionRef} id="message" name="message" required label="Message:" variant="standard" type="text" />
                                 <button className="send" type="submit" >
                                     Send
                                 </button>
@@ -89,7 +90,7 @@ const AlertBox = ({ visible, setMessageSent }) => {
             const timeout = setTimeout(() => {
                 setIsVisible(false);
                 setMessageSent(false);
-            }, 3000);
+            }, 5000);
 
             return () => {
                 clearTimeout(timeout);

@@ -10,22 +10,26 @@
     justify-content: center;
     min-height: 100vh;
 }
+
 .fade-out {
     opacity: 0;
-    transition: opacity 0.5s ease; 
+    transition: opacity 1s ease;
 }
+
 .contactMe {
     margin-bottom: 50px;
     padding: 10px;
     background-color: rgb(212, 189, 234);
     color: black;
 }
-.message{
+
+.message {
     position: fixed;
     z-index: 100;
-    top:90px;
+    top: 90px;
     right: 20px;
 }
+
 .contactHeader {
     font-size: 5rem;
 }
@@ -34,7 +38,8 @@
     width: 400px;
     margin-top: 30px;
 }
-.form-class{
+
+.form-class {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -42,10 +47,11 @@
     align-items: center;
     padding: 10px 50px;
 }
+
 .contactBody {
     width: 500px;
     border-radius: 10px;
-    background:linear-gradient(15deg, #e58afe,#fff);
+    background: linear-gradient(15deg, #e58afe, #fff);
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -102,9 +108,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
 }
+
 @media screen and (max-width:1351px) and (min-width:500px) {
     .contactHeader {
         font-size: 23px;
@@ -115,6 +120,7 @@
         padding: 100px;
     }
 }
+
 @media screen and (max-width:500px) {
     .contactBody {
         display: flex;
@@ -124,10 +130,12 @@
         padding: 40px 0;
         width: 100%;
     }
-    .contactBody input{
+
+    .contactBody input {
         width: 330px;
     }
-    .contactHeader{
+
+    .contactHeader {
         font-size: 23px;
     }
 }
@@ -151,7 +159,8 @@
         padding: 40px 0;
         width: 100%;
     }
-    .contactBody input{
+
+    .contactBody input {
         padding: 0;
         width: 250px;
     }
@@ -169,4 +178,3 @@
 
 
 }
-
