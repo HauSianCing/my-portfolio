@@ -37,6 +37,7 @@
     width: 400px;
     margin: 0;
     margin-left: 10px;
+    margin-top: 50px;
     border: none;
     border-radius: 5px;
     transition: 0.3s;
@@ -57,11 +58,10 @@
 }
 
 .project {
-    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .link a {
@@ -84,15 +84,15 @@
     }
 
     .projectCard {
-        width: 100%;
+        width: 90%;
         margin-bottom: 30px;
         box-shadow: 2px 3px 10px #9437ec;
         border-radius: 5px;
     }
 
     .project {
-        display: block;
-        padding: 10px 0;
+        margin: 0;
+        padding: 0;
     }
 
     .projectHeader {
@@ -117,7 +117,7 @@
     }
 
     .projectCard {
-        width: auto;
+        width: 90%;
         box-shadow: 2px 3px 10px #9437ec;
         border-radius: 5px;
         margin-bottom: 100px;
