@@ -65,7 +65,9 @@ export const Contact = () => {
                         <section className="form-class">
                             <form className="for" onSubmit={handleSubmit}>
                                 <TextField inputRef={nameRef} id="name" name="name" required label="Name:" variant="standard" type="text" />
+                                <br/><br/>
                                 <TextField inputRef={emailRef} id="email" name="email" required label="Email:" variant="standard" type="email" />
+                                <br/><br/>
                                 <TextField inputRef={descriptionRef} id="message" name="message" required label="Message:" variant="standard" type="text" />
                                 <button className="send" type="submit" >
                                     Send
@@ -100,7 +102,7 @@ const AlertBox = ({ visible, setMessageSent }) => {
 
     return (
         <div className={`alert-box ${isVisible ? "" : "fade-out"}`}>
-            <Alert severity="success">
+            <Alert severity="success"onClose={() => setMessageSent(false)}>
                 Your Message has been Successfully Sent
             </Alert>
         </div>
