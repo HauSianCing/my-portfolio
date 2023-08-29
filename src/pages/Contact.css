@@ -10,15 +10,22 @@
     justify-content: center;
     min-height: 100vh;
 }
-
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
 .contactMe {
     margin-bottom: 50px;
     padding: 10px;
     background-color: rgb(212, 189, 234);
     color: black;
 }
-
-
+.message{
+    position: fixed;
+    z-index: 100;
+    top:90px;
+    right: 20px;
+}
 .contactHeader {
     font-size: 5rem;
 }
