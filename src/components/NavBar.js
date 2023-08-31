@@ -1,11 +1,12 @@
 import { useState} from "react";
 import { Home } from "../pages/Home";
 import { Contact } from "../pages/Contact";
-import { Projects } from "../pages/Projects";
 import { About } from "../pages/About";
 import "../App.css"
 import "./NavBarStyles.css";
 import { Link } from 'react-scroll';
+import { ProjectSlide } from "../pages/ProjecSlide";
+import { Projects } from "../pages/Projects";
 
 export default function NavBar() {
 

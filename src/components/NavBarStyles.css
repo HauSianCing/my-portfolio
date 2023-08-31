@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #NavBar li {
@@ -36,6 +37,7 @@
 }
 
 .Nav {
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
